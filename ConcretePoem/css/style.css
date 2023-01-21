@@ -1,0 +1,90 @@
+
+/*This is a comment in CSS*/
+
+body{
+    font-family: Georgia, serif;
+}
+
+h1{
+    font-size: 30px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.centered-wrapper{
+    width:800px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+/* When giving a child element position absolute you should give the parent position value as well */
+/* The child will then be positioned absolute in realtion to the box container of the parent */
+/* positioning elements on the page is fundamental to understanding CSS: https://developer.mozilla.org/en-US/docs/Web/CSS/position */
+.title{
+    position: relative;
+    width: 350px;
+    text-align: left;
+    margin: 0 auto;
+}
+.title a{
+    position: absolute;
+}
+.title a.grief{
+    color:grey;
+    transform: translateX(5px) translateY(-5px);
+    font-size: 115%;
+}
+
+
+a.dead-link:hover{
+    opacity: 0;
+}
+a.tears{
+    color:cadetblue;
+    position: absolute;
+    transform: rotate(20deg) translateX(8px) translateY(20px);
+
+}
+
+a.smoke{
+    opacity: 0.3;
+    font-size: 80%;
+    color:darkslategray;
+}
+span#mountains{
+    text-transform: uppercase;
+    font-size: 130%;
+
+
+}
+
+span#water{
+    color:darkblue;
+
+}
+span#blue{
+    color:blue;
+}
+
+span#ghost{
+    opacity: 0.4;
+}
+
+span#dead{
+    position: absolute;
+    transform: rotate(20deg) translateY(20px) translateX(5px);
+}
+
+span#little{
+    font-style: italic;
+    font-size:50%;
+
+}
+span#red{
+    font-family: cursive;
+    color: red;
+
+}
